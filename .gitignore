@@ -1,0 +1,6 @@
+bower_components
+jspm_packages
+node_modules
+/dist
+.idea
+.DS_STORE

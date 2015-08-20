@@ -1,0 +1,45 @@
+{
+  "name": "polymer-seed",
+  "version": "0.0.1",
+  "description": "Seed Project for polymer and ES6",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/h13y/polymer-seed"
+  },
+  "keywords": [
+    "Polymer",
+    "ES6",
+    "SystemJS"
+  ],
+  "author": "Ashley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/h13y/polymer-seed/issues"
+  },
+  "homepage": "https://github.com/h13y/polymer-seed",
+  "jspm": {
+    "directories": {},
+    "configFile": "src/app/config.js",
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.1.13",
+      "babel-runtime": "npm:babel-runtime@^5.1.13",
+      "core-js": "npm:core-js@^0.9.4"
+    }
+  },
+  "devDependencies": {
+    "browser-sync": "^2.8.2",
+    "connect-history-api-fallback": "^1.1.0",
+    "del": "^1.2.1",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.0",
+    "gulp-changed": "^1.3.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "run-sequence": "^1.1.2",
+    "vinyl-paths": "^1.0.0"
+  }
+}
