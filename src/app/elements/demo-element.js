@@ -1,13 +1,14 @@
-
-class DemoElement extends Polymer.Class({
-  is: "demo-element",
-  properties: {
-    name: {
-      type: String,
-      value: "John"
-    }
+class DemoElement {
+  beforeRegister() {
+    this.is = 'demo-element';
+    this.properties = {
+      name: {
+        type: String,
+        value: "John"
+      }
+    };
   }
-}) {
+
   ready() {
     console.log("Demo Element ready");
   }
@@ -17,4 +18,4 @@ class DemoElement extends Polymer.Class({
   }
 }
 
-document.registerElement(DemoElement.prototype.is, DemoElement);
+Polymer(DemoElement);

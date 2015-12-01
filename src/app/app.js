@@ -1,6 +1,17 @@
 class App {
   constructor() {
-    this.init();
+    this._appInit();
+  }
+
+  _appInit() {
+    // Polymer has been initialized
+    if (window.Polymer && window.Polymer.Base.importHref) {
+      this.init();
+      return ;
+    }
+
+    // Try again
+    setTimeout(() => this._appInit(), 50);
   }
 
   init() {
